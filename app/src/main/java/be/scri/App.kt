@@ -6,13 +6,14 @@ import be.scri.extensions.config
 
 class App : Application() {
     override fun onCreate() {
-        AppCompatDelegate.setDefaultNightMode(
+        AppCompatDelegate.
+        setDefaultNightMode(
             if (config.darkTheme) {
                 AppCompatDelegate.MODE_NIGHT_YES
-            } else {
-                AppCompatDelegate.MODE_NIGHT_NO
-            },
+            } else { AppCompatDelegate
+                .MODE_NIGHT_NO },
         )
-        super.onCreate()
+        super
+            .onCreate()
     }
 }
